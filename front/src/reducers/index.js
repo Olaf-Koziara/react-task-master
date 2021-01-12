@@ -67,6 +67,15 @@ export const reactTaskReducer = (state = initialState, action) => {
         cartCounter: state.cartCounter + -1,
       };
     }
+    case actionTypes.setCartItems: {
+      let itemsQuantity = 0;
+      payload.map((item) => (itemsQuantity += item.productQuantity));
+      return {
+        ...state,
+        cartItems: payload,
+        cartCounter: itemsQuantity,
+      };
+    }
     default:
       return state;
   }

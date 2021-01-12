@@ -20,3 +20,7 @@ export const decreaseCartItemQuantityAction = (id) => ({
   type: actionTypes.decreaseCartItemQuantity,
   payload: id,
 });
+export const setCartItemsAction = (items) => ({
+  type: actionTypes.setCartItems,
+  payload: items,
+});
