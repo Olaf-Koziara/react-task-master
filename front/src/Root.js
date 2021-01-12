@@ -4,6 +4,7 @@ import { Provider, connect } from "react-redux";
 import { store } from "./store";
 import axios from "axios";
 import { setBooksAction } from "./actions";
+import MainTemplate from "../templates/MainTemplate/MainTemplate";
 const Root = ({ books, setBooks }) => {
   useEffect(() => {
     axios
@@ -13,9 +14,11 @@ const Root = ({ books, setBooks }) => {
 
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact />
-      </Switch>
+      <MainTemplate>
+        <Switch>
+          <Route path="/" exact />
+        </Switch>
+      </MainTemplate>
     </Router>
   );
 };
