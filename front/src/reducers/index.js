@@ -34,14 +34,13 @@ export const reactTaskReducer = (state = initialState, action) => {
           cartCounter: state.cartCounter + 1,
         };
       }
-
+    }
+    case actionTypes.deleteItemFromCart: {
+      const { id, productQuantity } = payload;
       return {
         ...state,
-        cartItems: [
-          ...state.cartItems,
-          cartItem ? cartItem : { ...payload, productQuantity: 1 },
-        ],
-        cartCounter: state.cartCounter + 1,
+        cartItems: state.cartItems.filter((item) => item.id !== id),
+        cartCounter: state.cartCounter - productQuantity,
       };
     }
     default:
