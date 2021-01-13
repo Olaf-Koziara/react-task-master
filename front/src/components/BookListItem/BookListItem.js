@@ -8,7 +8,7 @@ import {
 } from "../../styled_components";
 import { addItemToCartAction } from "../../actions";
 const BookListItem = ({ bookData }) => {
-  const { id, title, author, cover_url, pages, price, currency } = bookData;
+  const { title, author, cover_url, pages, price, currency } = bookData;
   const dispatch = useDispatch();
   const addItemToCart = (item) => dispatch(addItemToCartAction(item));
   return (
