@@ -61,6 +61,7 @@ const OrderForm = ({ cartItems, setCartItems }) => {
                   ? errors.firstName
                   : "Imie"
               }
+              warning={errors.firstName && touched.firstName}
               id="firstName"
               name="firstName"
               value={values.firstName}
@@ -70,6 +71,7 @@ const OrderForm = ({ cartItems, setCartItems }) => {
               placeholder={
                 errors.surname && touched.surname ? errors.surname : "Nazwisko"
               }
+              warning={errors.surname && touched.surname}
               id="surname"
               name="surname"
               value={values.surname}
@@ -77,6 +79,7 @@ const OrderForm = ({ cartItems, setCartItems }) => {
             />
             <StyledField
               placeholder={errors.city && touched.city ? errors.city : "Miasto"}
+              warning={errors.city && touched.city}
               id="city"
               name="city"
               value={errors.city && touched.city ? "" : values.city}
@@ -90,7 +93,7 @@ const OrderForm = ({ cartItems, setCartItems }) => {
               onChange={handleChange}
             />
             {errors.postcode && touched.postcode ? (
-              <div className="my-5"> {errors.postcode}</div>
+              <div className="my-5 text-red"> {errors.postcode}</div>
             ) : null}
             <StyledButton type="submit">ZAMAWIAM I PŁACĘ</StyledButton>{" "}
           </form>

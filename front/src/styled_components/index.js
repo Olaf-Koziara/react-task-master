@@ -129,4 +129,7 @@ export const StyledField = styled.input`
   margin-right: auto;
   display: block;
   transition: all 0.4s ease;
+  &::placeholder {
+    color: ${({ warning }) => (warning ? "red" : null)};
+  }
 `;
