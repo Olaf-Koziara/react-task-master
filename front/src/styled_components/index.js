@@ -41,7 +41,7 @@ export const StyledBookList = styled.ul`
   grid-gap: 30px;
 `;
 export const StyledBookListItem = styled.li`
-  width: 450px;
+  width: 430px;
   height: 400px;
   margin: auto;
   position: relative;
@@ -97,7 +97,7 @@ export const StyledCartList = styled.ul`
 `;
 export const StyledCartListItem = styled.li`
   display: grid;
-  grid-template-columns: 12% 40% 15% 4% 4% 4% 20%;
+  grid-template-columns: 16% 41% 15% 4% 4% 4% 20%;
   margin: 5px;
   font-weight: bold;
   height: 80px;
