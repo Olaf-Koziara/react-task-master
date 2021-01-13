@@ -51,9 +51,6 @@ export const StyledBookListItem = styled.li`
 
   box-shadow: 3px 3px 9px -3px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  > h2 {
-    margin: 20px;
-  }
 `;
 
 export const StyledProductImage = styled.img`
@@ -85,7 +82,7 @@ export const StyledCartWrapper = styled.div`
   text-align: center;
   width: 90%;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 100px;
   min-height: 600px;
   box-shadow: 3px 3px 9px -3px rgba(0, 0, 0, 0.25);
   padding: 20px;
