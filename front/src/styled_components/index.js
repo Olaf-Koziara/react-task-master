@@ -94,6 +94,7 @@ export const StyledCartList = styled.ul`
   list-style: none;
   min-height: 500px;
   overflow: auto;
+  overflow-x: hidden;
 `;
 export const StyledCartListItem = styled.li`
   display: grid;
