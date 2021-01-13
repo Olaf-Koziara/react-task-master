@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Provider, connect } from "react-redux";
-import { store } from "./store";
+import { connect } from "react-redux";
+
 import axios from "axios";
 import { setBooksAction, setCartItemsAction } from "./actions";
 import MainTemplate from "./templates/MainTemplate/MainTemplate";
