@@ -1,13 +1,16 @@
 import styled, { css, keyframes } from "styled-components";
 export const StyledNavList = styled.ul`
   list-style: none;
-  height: 80px;
+
   width: 100%;
   background-color: #f4eded;
   display: flex;
-
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 10px;
   gap: 30px;
+  z-index: 10;
 `;
 export const StyledLogo = styled.img`
   width: 60px;
@@ -34,7 +37,7 @@ export const StyledCartIcon = styled.img`
 export const StyledBookList = styled.ul`
   width: 90%;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 130px;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
