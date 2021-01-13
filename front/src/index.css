@@ -39,7 +39,7 @@ code {
 .text-center {
   text-align: center;
 }
-.text-y-center {
+.text-vertical-center {
   height: fit-content;
   margin: auto;
 }

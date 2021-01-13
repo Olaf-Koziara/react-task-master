@@ -27,10 +27,10 @@ const CartListItem = ({
   return (
     <StyledCartListItem>
       <StyledCartListItemImage src={cover_url} />
-      <div className="text-y-center">{title}</div>
-      <div className="text-y-center">{`${price} ${currency}`}</div>
+      <div className="text-vertical-center">{title}</div>
+      <div className="text-vertical-center">{`${price} ${currency}`}</div>
       <button onClick={handleDecreaseCartItemQuantity}>-</button>
-      <h2 className="text-y-center">{productQuantity}</h2>
+      <h2 className="text-vertical-center">{productQuantity}</h2>
       <button onClick={() => increaseCartItemQuantity(id)}>+</button>
       <button
         onClick={() =>
