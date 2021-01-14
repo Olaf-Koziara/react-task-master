@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage, useFormik } from "formik";
-import { StyledButton, StyledField } from "../../styled_components";
+import { StyledButton, StyledField, StyledForm } from "../../styled_components";
 import * as Yup from "yup";
 import { connect } from "react-redux";
 import axios from "axios";
@@ -54,7 +54,7 @@ const OrderForm = ({ cartItems, setCartItems }) => {
       {!isOrdered ? (
         <>
           <h3>Podaj dane</h3>
-          <form onSubmit={handleSubmit}>
+          <StyledForm onSubmit={handleSubmit}>
             <StyledField
               placeholder={
                 errors.firstName && touched.firstName
@@ -96,7 +96,7 @@ const OrderForm = ({ cartItems, setCartItems }) => {
               <div className="my-5 text-red"> {errors.postcode}</div>
             ) : null}
             <StyledButton type="submit">ZAMAWIAM I PŁACĘ</StyledButton>{" "}
-          </form>
+          </StyledForm>
         </>
       ) : (
         <h2>Dziękujemy za złożenie zamówienia</h2>

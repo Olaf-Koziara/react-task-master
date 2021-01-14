@@ -111,7 +111,8 @@ export const StyledCartListItemImage = styled.img`
 export const StyledForm = styled.form`
   margin: auto;
   box-shadow: 3px 3px 9px -3px rgba(0, 0, 0, 0.15);
-
+  margin-top: 80px;
+  padding: 40px;
   width: 40%;
 `;
 export const StyledField = styled.input`
